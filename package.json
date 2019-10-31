@@ -1,6 +1,6 @@
 {
-  "name": "@ckeditor/ckeditor5-build-balloon",
-  "version": "15.0.0",
+  "name": "samf-custom-ckeditor5-build-balloon",
+  "version": "15.0.1",
   "description": "The balloon editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "wysiwyg",
@@ -36,6 +36,7 @@
     "@ckeditor/ckeditor5-easy-image": "^15.0.0",
     "@ckeditor/ckeditor5-editor-balloon": "^15.0.0",
     "@ckeditor/ckeditor5-essentials": "^15.0.0",
+	"@ckeditor/ckeditor5-font": "^15.0.0",
     "@ckeditor/ckeditor5-heading": "^15.0.0",
     "@ckeditor/ckeditor5-image": "^15.0.0",
     "@ckeditor/ckeditor5-indent": "^15.0.0",
@@ -87,5 +88,8 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-font": "^15.0.0"
   }
 }

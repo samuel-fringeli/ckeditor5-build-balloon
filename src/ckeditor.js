@@ -13,6 +13,9 @@ import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+import Font from '@ckeditor/ckeditor5-font/src/font';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -36,6 +39,9 @@ BalloonEditor.builtinPlugins = [
 	Italic,
 	Underline,
 	Code,
+	Font,
+	FontColor,
+	FontBackgroundColor,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
@@ -53,23 +59,17 @@ BalloonEditor.builtinPlugins = [
 BalloonEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading',
-			'|',
 			'bold',
 			'italic',
 			'underline',
 			'code',
+			'fontColor',
+			'fontBackgroundColor',
 			'link',
 			'bulletedList',
 			'numberedList',
-			'|',
-			'indent',
-			'outdent',
-			'|',
 			'blockQuote',
-			'insertTable',
-			'undo',
-			'redo'
+			'insertTable'
 		]
 	},
 	table: {
